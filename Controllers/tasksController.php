@@ -22,7 +22,7 @@ class tasksController extends Controller
 
             if ($task->create($_POST["title"], $_POST["description"]))
             {
-                header("Location: " . WEBROOT . "tasks/index");
+                header("Location: " . WEBROOT . "/tasks/index");
             }
         }
 
@@ -40,7 +40,7 @@ class tasksController extends Controller
         {
             if ($task->edit($id, $_POST["title"], $_POST["description"]))
             {
-                header("Location: " . WEBROOT . "tasks/index");
+                header("Location: " . WEBROOT . "/tasks/index");
             }
         }
         $this->set($d);
@@ -54,7 +54,7 @@ class tasksController extends Controller
         $task = new Task();
         if ($task->delete($id))
         {
-            header("Location: " . WEBROOT . "tasks/index");
+            header("Location: " . WEBROOT . "/tasks/index");
         }
     }
 }

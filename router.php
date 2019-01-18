@@ -7,7 +7,7 @@ class Router
     {
         $url = trim($url);
 
-        if ($url == "/MVC_todo/")
+        if ($url == "/MVC/")
         {
             $request->controller = "tasks";
             $request->action = "index";
