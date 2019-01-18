@@ -22,4 +22,12 @@ example:
         </Directory>
 </VirtualHost>
 
+In order to use mod_rewrite you can type the following command in the terminal:
+
+sudo a2enmod rewrite
+
+Restart apache2 after
+
+sudo service apache2 restart
+
 Mvc is ready to start!
